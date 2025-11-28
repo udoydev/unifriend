@@ -18,6 +18,10 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
+   path('__reload__/', include('django_browser_reload.urls')),  # <- important
     path('admin/', admin.site.urls),
     path('',include('main.urls')),
+
+    # last
+    #  path("__reload__/", include("django_browser_reload.urls")),
 ]

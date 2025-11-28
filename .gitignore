@@ -1,1 +1,11 @@
 *.venv
+# Django
+__pycache__/
+*.pyc
+
+# Tailwind / Node
+node_modules/
+static/css/output.css
+
+# Environment
+.env
